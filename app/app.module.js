@@ -1,12 +1,25 @@
 (function(){
     'use strict';
 
-    //REGISTER
-    angular
-        .module('GettingStarted', ['ngRoute']);
+    // CREATE NEW MODULE
+    angular.module('GettingStarted', ['ngRoute']);
 
-    //INJECT
+    // FETCH INSTANCE OF NEW MODULE
+    var app = angular.module('GettingStarted');
 
-    //FUNCTION DEFINITION
+    // CONFIGURE NEW MODULE 
+    app.config(function($routeProvider) {
+            
+            $routeProvider
+                .when('/', {
+                    templateUrl: 'app.html',
+                    controller: 'appController',
+                })
+                .when('/app2', {
+                    templateUrl: 'app2.html',
+                    controller: 'app2Controller'
+                });
+                
+        });
 
 })();
