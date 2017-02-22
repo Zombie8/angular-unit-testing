@@ -1,0 +1,25 @@
+{
+  "name": "angular-unit-testing",
+  "version": "1.0.0",
+  "description": "a project for learning how to unit test",
+  "main": "app.js",
+  "scripts": {
+    "test": "karma test karma.conf.js",
+    "start": "node node_modules/http-server/bin/http-server "
+  },
+  "author": "Zachary Snyder",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.2.32",
+    "angular-mocks": "^1.2.32",
+    "angular-route": "^1.2.32"
+  },
+  "devDependencies": {
+    "express": "^4.14.1",
+    "http-server": "^0.9.0",
+    "jasmine": "^2.5.3",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0"
+  }
+}

@@ -1,0 +1,5 @@
+# Ignore Node Modules Folder.
+node_modules/
+
+# Ignore any npm debug errors
+npm-debug.log
